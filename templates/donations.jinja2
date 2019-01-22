@@ -3,6 +3,9 @@
 {% block subtitle %}Donations{% endblock subtitle %}
 
 {% block content %}
+<form method="POST">
+    <b><input type="submit" value="Add Donation"></b>
+</form>
 <ul>
     {% for donation in donations %}
         <li><b>{{ donation.donor.name }}</b>: {{ donation.value }}</li>
